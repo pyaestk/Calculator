@@ -22,8 +22,8 @@
             android:layout_marginEnd="16dp"
             android:background="#2C2C2C"
             android:gravity="center|end"
-            android:lines="3"
-            android:maxLines="3"
+            android:lines="2"
+            android:maxLines="2"
             android:paddingEnd="15dp"
             android:textColor="@color/white"
             android:textSize="24sp"
@@ -36,12 +36,13 @@
         <TextView
             android:id="@+id/Result"
             android:layout_width="0dp"
-            android:layout_height="76dp"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_marginTop="32dp"
             android:gravity="center|end"
-            android:lines="1"
-            android:maxLines="1"
+            android:lines="2"
+            android:maxLines="2"
+            android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:textColor="@color/white"
             android:textSize="48sp"
@@ -75,7 +76,7 @@
                     android:layout_marginEnd="3dp"
                     android:layout_span="2"
                     android:backgroundTint="#373737"
-                    android:text="AC"
+                    android:text="@string/ac"
                     android:textSize="16sp" />
 
                 <Button
@@ -85,7 +86,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp"
                     android:backgroundTint="#373737"
-                    android:text="DEL"
+                    android:text="@string/del"
                     android:textSize="16sp" />
 
                 <Button
@@ -95,7 +96,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp"
                     android:backgroundTint="#373737"
-                    android:text="/"
+                    android:text="@string/division"
                     android:textSize="24sp" />
             </TableRow>
 
@@ -111,7 +112,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp"
                     android:backgroundTint="#555555"
-                    android:text="7"
+                    android:text="@string/seven"
                     android:textSize="20sp" />
 
                 <Button
@@ -121,7 +122,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp"
                     android:backgroundTint="#555555"
-                    android:text="8"
+                    android:text="@string/eight"
                     android:textSize="20sp" />
 
                 <Button
@@ -131,7 +132,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp"
                     android:backgroundTint="#555555"
-                    android:text="9"
+                    android:text="@string/nine"
                     android:textSize="20sp" />
 
                 <Button
@@ -141,7 +142,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp"
                     android:backgroundTint="#373737"
-                    android:text="x" />
+                    android:text="@string/multi" />
             </TableRow>
 
             <TableRow
@@ -156,7 +157,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp"
                     android:backgroundTint="#555555"
-                    android:text="4"
+                    android:text="@string/four"
                     android:textSize="20sp" />
 
                 <Button
@@ -166,7 +167,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp"
                     android:backgroundTint="#555555"
-                    android:text="5"
+                    android:text="@string/five"
                     android:textSize="20sp" />
 
                 <Button
@@ -176,7 +177,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp"
                     android:backgroundTint="#555555"
-                    android:text="6"
+                    android:text="@string/six"
                     android:textSize="20sp" />
 
                 <Button
@@ -186,7 +187,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp"
                     android:backgroundTint="#373737"
-                    android:text="-"
+                    android:text="@string/minus"
                     android:textSize="24sp" />
             </TableRow>
 
@@ -202,7 +203,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp"
                     android:backgroundTint="#555555"
-                    android:text="1"
+                    android:text="@string/one"
                     android:textSize="20sp" />
 
                 <Button
@@ -212,7 +213,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp"
                     android:backgroundTint="#555555"
-                    android:text="2"
+                    android:text="@string/two"
                     android:textSize="20sp" />
 
                 <Button
@@ -222,7 +223,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp"
                     android:backgroundTint="#555555"
-                    android:text="3"
+                    android:text="@string/three"
                     android:textSize="20sp" />
 
                 <Button
@@ -232,7 +233,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp"
                     android:backgroundTint="#373737"
-                    android:text="+"
+                    android:text="@string/plus"
                     android:textSize="24sp" />
             </TableRow>
 
@@ -249,7 +250,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp"
                     android:backgroundTint="#373737"
-                    android:text="."
+                    android:text="@string/dot"
                     android:textSize="20sp" />
 
                 <Button
@@ -259,7 +260,7 @@
                     android:layout_marginStart="3dp"
                     android:layout_marginEnd="3dp"
                     android:backgroundTint="#555555"
-                    android:text="0"
+                    android:text="@string/zero"
                     android:textSize="20sp" />
 
                 <Button
@@ -270,7 +271,7 @@
                     android:layout_marginEnd="3dp"
                     android:layout_span="2"
                     android:backgroundTint="#FFA300"
-                    android:text="="
+                    android:text="@string/equal"
                     android:textSize="24sp" />
 
             </TableRow>
