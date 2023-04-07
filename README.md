@@ -1,6 +1,4 @@
 # Calculator
-
-</br>
 Simple calculator app (without using expression library)
 </br>
 </br>
