@@ -3,6 +3,7 @@ package com.example.mycalculator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.example.mycalculator.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -143,18 +144,25 @@ class MainActivity : AppCompatActivity() {
 
         var temExp = StringBuilder()
         var array = mutableListOf<Any>()
+        var opcheck = listOf<Any>('+','-','x','/')
 
-        for (i in expressionBuilder.indices){
-            if (expressionBuilder[i].isDigit() || expressionBuilder[i]=='.'){
-                temExp.append(expressionBuilder[i])
-            }
-            else{
-                array.add(temExp.toString())
-                temExp.clear()
-                array.add(expressionBuilder[i])
-            }
+        if (opcheck.contains(expressionBuilder.last())){
+
+            Toast.makeText(this, "Not valid, can't show output", Toast.LENGTH_SHORT).show()
         }
-        array.add(temExp.toString().toDouble())
+        else{
+            for (i in expressionBuilder.indices){
+                if (expressionBuilder[i].isDigit() || expressionBuilder[i]=='.'){
+                    temExp.append(expressionBuilder[i])
+                }
+                else{
+                    array.add(temExp.toString())
+                    temExp.clear()
+                    array.add(expressionBuilder[i])
+                }
+            }
+            array.add(temExp.toString().toDouble())
+        }
 
 
         var multiSubArray = mutableListOf<Any>()
