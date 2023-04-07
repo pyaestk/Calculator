@@ -1,5 +1,5 @@
 # Calculator
-in-progress project
+
 </br>
 Simple calculator app (without using expression library)
 </br>
