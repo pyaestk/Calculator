@@ -1,5 +1,5 @@
 # Calculator
-a simple calculator app
+a simple calculator app (without using Expression Libraries)
 </br>
 </br>
 <p align="center">
